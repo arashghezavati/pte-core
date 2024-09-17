@@ -1,0 +1,40 @@
+
+.selected {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.incorrect {
+  text-decoration: underline;
+  text-decoration-color: rgb(76, 0, 255); 
+   text-decoration-thickness: 2px;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+  margin-left: 4px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.instructions {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.smw-container p span {
+  padding: 2px 4px;
+  margin: 0 2px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.smw-container p span:hover {
+  background-color: #e0e0e0;
+}

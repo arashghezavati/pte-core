@@ -1,0 +1,240 @@
+/* General Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    box-sizing: border-box;
+  }
+  
+  .sst-page {
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .navbar-logo a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ecf0f1;
+    border-radius: 2px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin: 0;
+  }
+  
+  .nav-menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .nav-menu a:hover {
+    color: #1abc9c;
+  }
+  
+  /* Responsive Menu */
+  @media (max-width: 768px) {
+    .nav-toggle-label {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #2c3e50;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-radius: 0 0 5px 5px;
+      z-index: 999; /* Ensures the menu stays above the content */
+    }
+  
+    .nav-menu li {
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-menu li:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  
+    .nav-toggle:checked + .nav-toggle-label + .nav-menu {
+      display: flex;
+      width: 100%; /* Ensures the menu aligns with the navbar */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-logo a {
+      font-size: 20px;
+    }
+  
+    .nav-menu {
+      top: 50px; /* Adjust to ensure the menu doesn't overlap */
+    }
+  }
+  
+  /* SST Content Layout */
+  .sst-content {
+    margin-top: 20px;
+  }
+  
+  .card-timer {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 1rem;
+    color: #ff4081;
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .instructions {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    text-align: justify;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  .suggested-answer {
+    color: #e74c3c;
+    font-size: 1rem;
+    margin-top: 16px;
+    font-weight: bold;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .nav-button {
+    width: 48%;
+    padding: 12px 0;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+  }
+  
+  .nav-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .start-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 16px;
+  }
+  
+  .start-button:hover {
+    background-color: #e91e63;
+  }
+  
+  /* Responsive Content Adjustments */
+  @media (max-width: 768px) {
+    .card-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .input-box {
+      font-size: 0.9rem;
+    }
+  
+    .instructions, .question-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-timer {
+      font-size: 0.9rem;
+      padding: 4px 8px;
+    }
+  
+    .instructions, .question-text {
+      font-size: 0.9rem;
+    }
+  
+    .input-box {
+      font-size: 0.85rem;
+    }
+  }
+  

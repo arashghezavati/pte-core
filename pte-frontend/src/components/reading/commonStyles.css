@@ -1,0 +1,113 @@
+
+
+/* Header styles for the question title */
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Subtext for additional instructions */
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Timer position and style */
+.timers {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: #dc3545; /* Red color for the timer */
+  font-weight: bold;
+}
+audio {
+  width: 20%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Green Stop button */
+.stop-button {
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.stop-button:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}
+
+/* Blue Next and Previous buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation-buttons button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Styles for card appearance */
+.card {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Styling the ReactMic soundwave */
+.sound-wave {
+  width: 20%;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #f4f6f9; /* Pink background */
+  border-radius: 80px;
+}
+.audios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

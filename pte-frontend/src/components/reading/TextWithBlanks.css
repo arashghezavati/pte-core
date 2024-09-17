@@ -1,0 +1,91 @@
+/* TextWithBlanks.css */
+.text-with-blanks-container {
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timers {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+}
+
+.select {
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.result {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 5px;
+}
+
+.correct {
+  background-color: yellow;
+}
+
+.incorrect {
+  background-color: red;
+}
+
+.correct-answer {
+  background-color: green;
+  color: white;
+  margin-left: 5px;
+  padding: 2px 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.reset-button, .stop-button {
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.reset-button:hover, .stop-button:hover {
+  background-color: #218838; /* Darker green for hover effect */
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.navigation-buttons button {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+.current-question {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 16px;
+}

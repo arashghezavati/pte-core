@@ -1,0 +1,11 @@
+# Ignore environment files
+.env
+
+# Node.js
+/pte-backend/node_modules
+
+# React
+/pte-frontend/node_modules
+/pte-frontend/build
+
+
