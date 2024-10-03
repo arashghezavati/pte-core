@@ -1,4 +1,4 @@
-![PTE-Core Diagram](./PTE.drawio.png)
+![PTE-Core Diagram](./images//PTE.drawio.png)
 
 
 PTE-Core English Test Preparation Platform
