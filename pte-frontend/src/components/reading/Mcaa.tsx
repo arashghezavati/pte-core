@@ -86,17 +86,18 @@ const Mcaa: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className="button-group">
-          <button className="reset-button" onClick={handleReset}>Reset</button>
-          <button className="stop-button" onClick={handleStop}>Stop</button>
+        <div style={{display:'flex', justifyContent:'space-between'}}>
+          <button  onClick={handleReset}>Reset</button>
+          <button  onClick={handleStop}>Stop</button>
         </div>
+      
+      </Card>
+      <div >
+        Question {1} of {1} {/* Update with dynamic values */}
         <div className="navigation-buttons">
           <button onClick={handlePrevious}>Previous</button>
           <button onClick={handleNext}>Next</button>
         </div>
-      </Card>
-      <div className="current-question-info">
-        Question 1 of 1 {/* Update with dynamic values */}
       </div>
     </div>
   );

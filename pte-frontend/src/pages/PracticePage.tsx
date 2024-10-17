@@ -22,7 +22,7 @@ const PracticePage = () => {
                     <li><a href="#writing">Writing</a></li>
                     <li><a href="#listening">Listening</a></li>
                     <li><a href="#reading">Reading</a></li>
-                    <li><Link to="/logout">Logout</Link></li>
+                    <li><Link to="/" onClick={() => { /* Optional: Add logout logic here */ }}>Logout</Link></li> {/* Updated here */}
                 </ul>
             </nav>
 
@@ -30,7 +30,7 @@ const PracticePage = () => {
                 <div className="section" id="speaking">
                     <h2><FaMicrophone /> Speaking</h2>
                     <div className="subsection">
-                        <Link to="/speaking/rs" className="subsection-link">Repeat Sentence</Link>
+                        {/* <Link to="/speaking/rs" className="subsection-link">Repeat Sentence</Link> */}
                         <Link to="/speaking/describe-image" className="subsection-link">Describe Image</Link>
                         <Link to="/speaking/retell-lecture" className="subsection-link">Retell Lecture</Link>
                         <Link to="/speaking/answer-short-question" className="subsection-link">Answer Short Question</Link>

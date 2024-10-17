@@ -31,6 +31,7 @@
 .button-group {
   display: flex;
   justify-content: flex-start;
+  align-self: center;
   margin-top: 20px;
 }
 
@@ -43,6 +44,7 @@
   font-size: 16px;
   border-radius: 4px;
   margin-right: 10px;
+  
 }
 
 .reset-button:hover, .stop-button:hover {
